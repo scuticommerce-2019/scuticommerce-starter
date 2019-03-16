@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# Run Common module first
+# Run Common module first which has all dependencies
 
 cd ../common/
 mvn clean install
-cp
+
+## Core contains all common files
+
+cd ../core/
+mvn clean install
+
 
 cd ../cacheservice/
 mvn clean install
