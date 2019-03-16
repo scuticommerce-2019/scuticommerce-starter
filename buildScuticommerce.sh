@@ -34,7 +34,7 @@ cp target/inventoryservice-*.jar ../scuticommerce-starter/inventoryservice.jar
 
 
 cd ../messagingservice/
-mvn clean install
+mvn clean install -Dmaven.test.skip=true
 cp target/messagingservice-*.jar ../scuticommerce-starter/messagingservice.jar
 
 
